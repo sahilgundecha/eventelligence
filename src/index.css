@@ -7,7 +7,5 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: 'Plus Jakarta Sans', serif;
-  box-sizing: content-box;
-  overflow-y: scroll;
+  font-family: "Plus Jakarta Sans", serif;
 }

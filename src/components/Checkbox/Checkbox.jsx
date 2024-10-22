@@ -1,32 +1,45 @@
-import React from 'react';
+import React from "react";
 
 const Checkbox = ({
-  className,
-  name,
-  error,
-  register,
-  defaltChecked = false,
+  id,
+  name = "name",
+  error = null,
+  register = () => null,
+  disabled = false,
+  label = "",
+  defaultChecked = false,
+  fillColor = "",
+  width = "",
+  height = "",
+  labelClasses = "",
+  inputClasses = "",
   ...rest
 }) => {
   return (
-    <>
-      <input
-        type='date'
-        name={name}
-        className={
-          'w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-[#FF5B2E] focus:border-[#FF5B2E]' +
-          className
-        }
-        {...register('endDate', {
-          validate: (value) => {
-            return value ? false : 'Code is required';
-          },
-        })}
-        defaultChecked={defaltChecked}
-        {...rest}
-      />
-      {<p className='text-red-500 text-xs absolute'>{error}</p>}
-    </>
+    <div>
+      <label className="flex items-center rounded-md cursor-pointer">
+        <input
+          defaultChecked={defaultChecked}
+          disabled={disabled}
+          style={{
+            ...(width && { width }),
+            ...(height && { height }),
+          }}
+          type="checkbox"
+          className={`custom-checkbox rounded mr-2 accent-[${
+            fillColor ? fillColor : "#FF5B2E"
+          }] w-5 h-6 ${inputClasses}`}
+          {...rest}
+        />
+        {label ? (
+          <span
+            className={`text-[#201502] text-sm font-bold mr-2 ${labelClasses}`}
+          >
+            {label}
+          </span>
+        ) : null}
+      </label>
+    </div>
   );
 };
 
