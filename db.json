@@ -1,0 +1,2289 @@
+{
+  "events": [
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b004",
+      "eventName": "Tech Innovation Summit",
+      "eventCode": "TIS2024",
+      "category": "Technology",
+      "startDate": "2024-10-01",
+      "startTime": "08:00 AM",
+      "endDate": "2024-10-15",
+      "endTime": "05:00 PM",
+      "eventUrl": "https://example.com/tis2024",
+      "registration": {
+        "preRegistrationDate": "2024-05-01",
+        "earlyDate": "2024-07-15",
+        "standardDate": "2024-09-30",
+        "lateDate": "2024-10-14"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": true,
+        "isWaitlistAllowed": true,
+        "hasAbstract": true,
+        "isWaiverRequired": true
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Tech for Tomorrow Fund",
+        "category": "Innovation"
+      },
+      "goals": {
+        "registrationGoal": 500,
+        "revenueGoal": 30000
+      },
+      "attendance": {
+        "projected": 400,
+        "guaranteed": 350,
+        "capacity": 500
+      },
+      "count": {
+        "registeredMain": 380,
+        "registeredGuests": 15,
+        "waitlistMain": 5,
+        "waitlistGuests": 3,
+        "available": 117,
+        "remaining": 95
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-06-01",
+        "removeDate": "2024-10-16",
+        "timeZone": "GMT-05:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering for the Tech Innovation Summit!"
+      },
+      "location": {
+        "address": "456 Tech Ave",
+        "city": "Tech City",
+        "state": "NY",
+        "country": "USA",
+        "postalCode": "10001",
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "organizer": {
+        "organizerName": "Tech Events Group",
+        "organizerContact": "contact@techeventsgroup.com"
+      },
+      "pricing": {
+        "ticketPrice": 100,
+        "discountCode": "TECH2024",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 395,
+        "attendeeList": [
+          "Alice Johnson",
+          "Bob Smith",
+          "Clara Zetkin"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/tis2024",
+        "twitterEventUrl": "https://twitter.com/tis2024",
+        "instagramEventUrl": "https://instagram.com/tis2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [
+            {
+              "productName": "Cancellation Fee",
+              "productCode": "CANC_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 15,
+              "priceName": "Basic Cancellation",
+              "priceCode": "PRICE_CANC_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Late Cancellation Fee",
+              "productCode": "LATECANC2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 30,
+              "priceName": "Last Minute Cancellation",
+              "priceCode": "PRICE_LATECANC_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "sessionId": "S101",
+          "sessionTitle": "AI and the Future of Work",
+          "sessionCode": "AIFW2024",
+          "startDate": "2024-10-05",
+          "startTime": "09:00 AM",
+          "endDate": "2024-10-05",
+          "endTime": "11:00 AM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": true,
+          "fees": [
+            {
+              "registration": [
+                {
+                  "productName": "Standard Registration",
+                  "productCode": "REGCDE2024",
+                  "startDate": "2024-06-01",
+                  "endDate": "2024-09-09",
+                  "price": 85
+                },
+                {
+                  "productName": "Early Bird Registration",
+                  "productCode": "EARLYBIRD2024",
+                  "startDate": "2024-05-01",
+                  "endDate": "2024-05-31",
+                  "price": 70
+                }
+              ],
+              "cancellation": [
+                {
+                  "productName": "Cancellation Fee",
+                  "productCode": "CANC_CDE2024",
+                  "startDate": "2024-06-01",
+                  "endDate": "2024-09-09",
+                  "price": 15
+                },
+                {
+                  "productName": "Late Cancellation Fee",
+                  "productCode": "LATECANC2024",
+                  "startDate": "2024-09-01",
+                  "endDate": "2024-09-08",
+                  "price": 30
+                }
+              ],
+              "sponsorship": [
+                {
+                  "productName": "Silver Sponsorship",
+                  "productCode": "SILVERCDE2024",
+                  "startDate": "2024-02-01",
+                  "endDate": "2024-09-01",
+                  "price": 3000
+                },
+                {
+                  "productName": "Gold Sponsorship",
+                  "productCode": "GOLDCDE2024",
+                  "startDate": "2024-01-01",
+                  "endDate": "2024-09-01",
+                  "price": 5000
+                }
+              ],
+              "transfer": [
+                {
+                  "productName": "Transfer Fee",
+                  "productCode": "TRANS_CDE2024",
+                  "startDate": "2024-06-01",
+                  "endDate": "2024-09-09",
+                  "price": 10
+                },
+                {
+                  "productName": "Express Transfer Fee",
+                  "productCode": "EXPTRANS2024",
+                  "startDate": "2024-06-01",
+                  "endDate": "2024-09-09",
+                  "price": 20
+                }
+              ],
+              "substitution": [
+                {
+                  "productName": "Substitution Fee",
+                  "productCode": "SUBCDE2024",
+                  "startDate": "2024-06-01",
+                  "endDate": "2024-09-09",
+                  "price": 25
+                },
+                {
+                  "productName": "Last Minute Substitution Fee",
+                  "productCode": "LASTSUBCDE2024",
+                  "startDate": "2024-09-01",
+                  "endDate": "2024-09-08",
+                  "price": 40
+                }
+              ]
+            }
+          ],
+          "location": [
+            {
+              "locationName": "Innovation Hall",
+              "room": "H1",
+              "setup": "Lecture"
+            }
+          ],
+          "course": {
+            "courseId": "C001",
+            "courseName": "Future of Technology"
+          },
+          "faculty": {
+            "speakers": [
+              "Elon Musk"
+            ],
+            "staff": [
+              "Bill Gates"
+            ],
+            "volunteers": [
+              "Ada Lovelace"
+            ]
+          }
+        }
+      ],
+      "id": "9963"
+    },
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b005",
+      "eventName": "Global Health Conference",
+      "eventCode": "GHC2024",
+      "category": "Health",
+      "startDate": "2024-11-10",
+      "startTime": "09:00 AM",
+      "endDate": "2024-11-12",
+      "endTime": "05:00 PM",
+      "eventUrl": "https://example.com/ghc2024",
+      "registration": {
+        "preRegistrationDate": "2024-07-15",
+        "earlyDate": "2024-09-01",
+        "standardDate": "2024-11-01",
+        "lateDate": "2024-11-09"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": false,
+        "isWaitlistAllowed": true,
+        "hasAbstract": true,
+        "isWaiverRequired": false
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Health for All Fund",
+        "category": "Wellness"
+      },
+      "goals": {
+        "registrationGoal": 1000,
+        "revenueGoal": 50000
+      },
+      "attendance": {
+        "projected": 800,
+        "guaranteed": 600,
+        "capacity": 1000
+      },
+      "count": {
+        "registeredMain": 400,
+        "registeredGuests": 50,
+        "waitlistMain": 20,
+        "waitlistGuests": 10,
+        "available": 550,
+        "remaining": 450
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-08-01",
+        "removeDate": "2024-11-13",
+        "timeZone": "GMT-05:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering for the Global Health Conference!"
+      },
+      "location": {
+        "address": "123 Health St",
+        "city": "Health City",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94051",
+        "latitude": 36.7783,
+        "longitude": -119.4179
+      },
+      "organizer": {
+        "organizerName": "Health Events Organization",
+        "organizerContact": "contact@healthevents.org"
+      },
+      "pricing": {
+        "ticketPrice": 150,
+        "discountCode": "HEALTH2024",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 450,
+        "attendeeList": [
+          "John Doe",
+          "Jane Smith",
+          "Emily Johnson"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/ghc2024",
+        "twitterEventUrl": "https://twitter.com/ghc2024",
+        "instagramEventUrl": "https://instagram.com/ghc2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [
+            {
+              "productName": "Cancellation Fee",
+              "productCode": "CANC_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 15,
+              "priceName": "Basic Cancellation",
+              "priceCode": "PRICE_CANC_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Late Cancellation Fee",
+              "productCode": "LATECANC2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 30,
+              "priceName": "Last Minute Cancellation",
+              "priceCode": "PRICE_LATECANC_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "sessionId": "S201",
+          "sessionTitle": "Innovations in Healthcare",
+          "sessionCode": "IHC2024",
+          "startDate": "2024-11-11",
+          "startTime": "10:00 AM",
+          "endDate": "2024-11-11",
+          "endTime": "12:00 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": true,
+          "fees": {
+            "registrationFee": {
+              "productName": "Session Registration",
+              "productCode": "SESREGGHC2024",
+              "startDate": "2024-07-15",
+              "endDate": "2024-11-09",
+              "price": 70
+            }
+          },
+          "location": [
+            {
+              "locationName": "Health Auditorium",
+              "room": "A1",
+              "setup": "Panel"
+            }
+          ],
+          "course": {
+            "courseId": "C002",
+            "courseName": "Healthcare Innovation"
+          },
+          "faculty": {
+            "speakers": [
+              "Dr. Susan Green"
+            ],
+            "staff": [
+              "Dr. Henry Smith"
+            ],
+            "volunteers": [
+              "Mary Johnson"
+            ]
+          }
+        }
+      ],
+      "id": "932c"
+    },
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b001",
+      "eventName": "Tech Conference 2024",
+      "eventCode": "TC2024",
+      "category": "Technology",
+      "startDate": "05/10/2024",
+      "startTime": "09:00 AM",
+      "endDate": "05/12/2024",
+      "endTime": "05:00 PM",
+      "eventUrl": "https://example.com/tc2024",
+      "registration": {
+        "preRegistrationDate": "2024-02-01",
+        "earlyDate": "2024-03-15",
+        "standardDate": "2024-04-30",
+        "lateDate": "2024-05-09"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": true,
+        "isWaitlistAllowed": true,
+        "hasAbstract": true,
+        "isWaiverRequired": false
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Tech Scholarship Fund",
+        "category": "Education"
+      },
+      "goals": {
+        "registrationGoal": 500,
+        "revenueGoal": 20000
+      },
+      "attendance": {
+        "projected": 400,
+        "guaranteed": 350,
+        "capacity": 500
+      },
+      "count": {
+        "registeredMain": 320,
+        "registeredGuests": 50,
+        "waitlistMain": 30,
+        "waitlistGuests": 10,
+        "available": 120,
+        "remaining": 50
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-03-01",
+        "removeDate": "2024-05-13",
+        "timeZone": "GMT-05:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering!"
+      },
+      "location": {
+        "address": "123 Tech Ave",
+        "city": "Silicon Valley",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94043",
+        "latitude": 37.3861,
+        "longitude": -122.0838
+      },
+      "organizer": {
+        "organizerName": "Tech Events Inc.",
+        "organizerContact": "contact@techevents.com"
+      },
+      "pricing": {
+        "ticketPrice": 150,
+        "discountCode": "EARLYBIRD",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 370,
+        "attendeeList": [
+          "John Doe",
+          "Jane Smith",
+          "Alice Johnson"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/tc2024",
+        "twitterEventUrl": "https://twitter.com/tc2024",
+        "instagramEventUrl": "https://instagram.com/tc2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "sessionId": "S001",
+          "sessionTitle": "Keynote Address",
+          "sessionCode": "KA2024",
+          "startDate": "2024-05-10",
+          "startTime": "09:30",
+          "endDate": "2024-05-10",
+          "endTime": "10:30 AM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": false,
+          "fees": {
+            "registrationFee": {
+              "productName": "Keynote Registration",
+              "productCode": "KEYREG2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-05-09",
+              "price": 50
+            }
+          },
+          "location": [
+            {
+              "locationName": "Main Hall",
+              "room": "A1",
+              "setup": "Theater"
+            }
+          ],
+          "course": [
+            {
+              "courseId": "C001",
+              "courseName": "Innovations in Tech"
+            }
+          ],
+          "faculty": {
+            "speakers": [
+              "Dr. Tech Smith"
+            ],
+            "staff": [
+              "Sarah Connor"
+            ],
+            "volunteers": [
+              "Tom Riddle"
+            ]
+          }
+        },
+        {
+          "sessionId": "S002",
+          "sessionTitle": "Panel Discussion",
+          "sessionCode": "PD2024",
+          "startDate": "05/10/2024",
+          "startTime": "11:00 AM",
+          "endDate": "05/10/2024",
+          "endTime": "12:00 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": false,
+          "lateRegistration": false,
+          "fees": {
+            "registrationFee": {
+              "productName": "Panel Registration",
+              "productCode": "PANREG2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-05-09",
+              "price": 30
+            }
+          },
+          "location": [
+            {
+              "locationName": "Main Hall",
+              "room": "A1",
+              "setup": "Theater"
+            }
+          ],
+          "course": [
+            {
+              "courseId": "C002",
+              "courseName": "Future of AI"
+            }
+          ],
+          "faculty": {
+            "speakers": [
+              "Alice Wonderland"
+            ],
+            "staff": [
+              "Harry Potter"
+            ],
+            "volunteers": [
+              "Peter Parker"
+            ]
+          }
+        }
+      ],
+      "tracks": [],
+      "id": "ecee"
+    },
+    {
+      "eventId": "64f9a9bdbd1d601234a8d002",
+      "eventName": "Global Tech Expo 2024",
+      "eventCode": "GTE2024",
+      "category": "Technology",
+      "startDate": "2024-10-10",
+      "startTime": "08:00 AM",
+      "endDate": "2024-10-22",
+      "endTime": "05:00 PM",
+      "eventUrl": "https://example.com/gte2024",
+      "registration": {
+        "preRegistrationDate": "2024-05-15",
+        "earlyDate": "2024-07-30",
+        "standardDate": "2024-09-15",
+        "lateDate": "2024-10-09"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": true,
+        "isWaitlistAllowed": true,
+        "hasAbstract": true,
+        "isWaiverRequired": true
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Tech Future Fund",
+        "category": "Innovation"
+      },
+      "goals": {
+        "registrationGoal": 1000,
+        "revenueGoal": 70000
+      },
+      "attendance": {
+        "projected": 850,
+        "guaranteed": 750,
+        "capacity": 1000
+      },
+      "count": {
+        "registeredMain": 820,
+        "registeredGuests": 50,
+        "waitlistMain": 15,
+        "waitlistGuests": 10,
+        "available": 115,
+        "remaining": 95
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-07-01",
+        "removeDate": "2024-10-23",
+        "timeZone": "GMT-04:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering for Global Tech Expo 2024!"
+      },
+      "location": {
+        "address": "123 Innovation Blvd",
+        "city": "Tech City",
+        "state": "NY",
+        "country": "USA",
+        "postalCode": "10001",
+        "latitude": 40.7128,
+        "longitude": -74.006
+      },
+      "id": "45c4"
+    },
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b002",
+      "eventName": "Health & Wellness Expo",
+      "eventCode": "HW2024",
+      "category": "Health",
+      "startDate": "2024-06-20",
+      "startTime": "10:00 AM",
+      "endDate": "2024-06-22",
+      "endTime": "06:00 PM",
+      "eventUrl": "https://example.com/hw2024",
+      "registration": {
+        "preRegistrationDate": "2024-03-01",
+        "earlyDate": "2024-04-30",
+        "standardDate": "2024-06-10",
+        "lateDate": "2024-06-19"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": false,
+        "isWaitlistAllowed": false,
+        "hasAbstract": false,
+        "isWaiverRequired": true
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Health Research Fund",
+        "category": "Wellness"
+      },
+      "goals": {
+        "registrationGoal": 1000,
+        "revenueGoal": 50000
+      },
+      "attendance": {
+        "projected": 800,
+        "guaranteed": 700,
+        "capacity": 1000
+      },
+      "count": {
+        "registeredMain": 600,
+        "registeredGuests": 100,
+        "waitlistMain": 50,
+        "waitlistGuests": 20,
+        "available": 300,
+        "remaining": 200
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-03-15",
+        "removeDate": "2024-06-23",
+        "timeZone": "GMT-05:00 Eastern Time",
+        "confirmationMessage": "You're registered for the Health & Wellness Expo!"
+      },
+      "location": {
+        "address": "456 Wellness Blvd",
+        "city": "Health City",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94045",
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "organizer": {
+        "organizerName": "Wellness Events LLC",
+        "organizerContact": "info@wellnessevents.com"
+      },
+      "pricing": {
+        "ticketPrice": 75,
+        "discountCode": "WELLNESS2024",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 700,
+        "attendeeList": [
+          "John Smith",
+          "Mary Johnson",
+          "David Brown"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/hw2024",
+        "twitterEventUrl": "https://twitter.com/hw2024",
+        "instagramEventUrl": "https://instagram.com/hw2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [
+            {
+              "productName": "Cancellation Fee",
+              "productCode": "CANC_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 15,
+              "priceName": "Basic Cancellation",
+              "priceCode": "PRICE_CANC_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Late Cancellation Fee",
+              "productCode": "LATECANC2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 30,
+              "priceName": "Last Minute Cancellation",
+              "priceCode": "PRICE_LATECANC_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [],
+      "tracks": [],
+      "id": "809f"
+    },
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b003",
+      "eventName": "Creative Arts Festival",
+      "eventCode": "CAF2024",
+      "category": "Arts",
+      "startDate": "2024-07-15",
+      "startTime": "09:00 AM",
+      "endDate": "2024-07-18",
+      "endTime": "05:00 PM",
+      "eventUrl": "https://example.com/caf2024",
+      "registration": {
+        "preRegistrationDate": "2024-04-01",
+        "earlyDate": "2024-05-15",
+        "standardDate": "2024-06-30",
+        "lateDate": "2024-07-14"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": true,
+        "isWaitlistAllowed": true,
+        "hasAbstract": false,
+        "isWaiverRequired": false
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Arts for All Fund",
+        "category": "Creativity"
+      },
+      "goals": {
+        "registrationGoal": 300,
+        "revenueGoal": 15000
+      },
+      "attendance": {
+        "projected": 250,
+        "guaranteed": 200,
+        "capacity": 300
+      },
+      "count": {
+        "registeredMain": 220,
+        "registeredGuests": 20,
+        "waitlistMain": 10,
+        "waitlistGuests": 5,
+        "available": 80,
+        "remaining": 40
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-05-01",
+        "removeDate": "2024-07-19",
+        "timeZone": "GMT-05:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering for the Creative Arts Festival!"
+      },
+      "location": {
+        "address": "789 Art St",
+        "city": "Art City",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94051",
+        "latitude": 36.7783,
+        "longitude": -119.4179
+      },
+      "organizer": {
+        "organizerName": "Creative Events Group",
+        "organizerContact": "contact@creativeevents.com"
+      },
+      "pricing": {
+        "ticketPrice": 60,
+        "discountCode": "CREATIVE2024",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 240,
+        "attendeeList": [
+          "Emily Clark",
+          "James Davis",
+          "Michael Thompson"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/caf2024",
+        "twitterEventUrl": "https://twitter.com/caf2024",
+        "instagramEventUrl": "https://instagram.com/caf2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [
+            {
+              "productName": "Cancellation Fee",
+              "productCode": "CANC_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 15,
+              "priceName": "Basic Cancellation",
+              "priceCode": "PRICE_CANC_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Late Cancellation Fee",
+              "productCode": "LATECANC2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 30,
+              "priceName": "Last Minute Cancellation",
+              "priceCode": "PRICE_LATECANC_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "sessionId": "S001",
+          "sessionTitle": "Artistic Expression Workshop",
+          "sessionCode": "AEW2024",
+          "startDate": "2024-07-16",
+          "startTime": "10:00 AM",
+          "endDate": "2024-07-16",
+          "endTime": "12:00 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": true,
+          "fees": {
+            "registrationFee": {
+              "productName": "Workshop Registration",
+              "productCode": "WORKREG2024",
+              "startDate": "2024-04-01",
+              "endDate": "2024-07-14",
+              "price": 25
+            }
+          },
+          "location": {
+            "locationName": "Creative Studio",
+            "room": "C1",
+            "setup": "Workshop"
+          },
+          "course": {
+            "courseId": "C004",
+            "courseName": "Exploring Artistic Techniques"
+          },
+          "faculty": {
+            "speakers": [
+              "Vincent Van Gough"
+            ],
+            "staff": [
+              "Pablo Picasso"
+            ],
+            "volunteers": [
+              "Frida Kahlo"
+            ]
+          }
+        },
+        {
+          "sessionId": "S002",
+          "sessionTitle": "Digital Art Innovations",
+          "sessionCode": "DAI2024",
+          "startDate": "2024-07-17",
+          "startTime": "01:00 PM",
+          "endDate": "2024-07-17",
+          "endTime": "03:00 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": false,
+          "lateRegistration": false,
+          "fees": {
+            "registrationFee": {
+              "productName": "Digital Art Registration",
+              "productCode": "DIGARTREG2024",
+              "startDate": "2024-04-01",
+              "endDate": "2024-07-14",
+              "price": 30
+            }
+          },
+          "location": {
+            "locationName": "Digital Lab",
+            "room": "D1",
+            "setup": "Classroom"
+          },
+          "course": {
+            "courseId": "C005",
+            "courseName": "Creating Stunning Digital Art"
+          },
+          "faculty": {
+            "speakers": [
+              "Salvador Dali"
+            ],
+            "staff": [
+              "Andy Warhol"
+            ],
+            "volunteers": [
+              "Georgia O'Keeffe"
+            ]
+          }
+        }
+      ],
+      "tracks": [
+        {
+          "sessionId": "T001",
+          "sessionTitle": "Sculpture Techniques",
+          "sessionCode": "ST2024",
+          "startDate": "2024-07-18",
+          "startTime": "09:00 AM",
+          "endDate": "2024-07-18",
+          "endTime": "10:00 AM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": true,
+          "fees": {
+            "registrationFee": {
+              "productName": "Sculpture Registration",
+              "productCode": "SCULPTREG2024",
+              "startDate": "2024-04-01",
+              "endDate": "2024-07-14",
+              "price": 35
+            }
+          },
+          "location": {
+            "locationName": "Sculpture Hall",
+            "room": "S1",
+            "setup": "Workshop"
+          },
+          "course": {
+            "courseId": "C006",
+            "courseName": "Mastering Sculpture Techniques"
+          },
+          "faculty": {
+            "speakers": [
+              "Michelangelo"
+            ],
+            "staff": [
+              "Henry Moore"
+            ],
+            "volunteers": [
+              "Louise Bourgeois"
+            ]
+          }
+        }
+      ],
+      "id": "20c6"
+    },
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b004",
+      "eventName": "Technology Innovations Expo",
+      "eventCode": "TIE2024",
+      "category": "Technology",
+      "startDate": "2024-08-20",
+      "startTime": "10:00 AM",
+      "endDate": "2024-08-22",
+      "endTime": "06:00 PM",
+      "eventUrl": "https://example.com/tie2024",
+      "registration": {
+        "preRegistrationDate": "2024-05-01",
+        "earlyDate": "2024-06-30",
+        "standardDate": "2024-08-15",
+        "lateDate": "2024-08-19"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": false,
+        "isWaitlistAllowed": false,
+        "hasAbstract": true,
+        "isWaiverRequired": false
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Tech for Tomorrow Fund",
+        "category": "Innovation"
+      },
+      "goals": {
+        "registrationGoal": 500,
+        "revenueGoal": 30000
+      },
+      "attendance": {
+        "projected": 400,
+        "guaranteed": 350,
+        "capacity": 600
+      },
+      "count": {
+        "registeredMain": 300,
+        "registeredGuests": 50,
+        "waitlistMain": 20,
+        "waitlistGuests": 10,
+        "available": 250,
+        "remaining": 150
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-06-01",
+        "removeDate": "2024-08-23",
+        "timeZone": "GMT-04:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering for the Technology Innovations Expo!"
+      },
+      "location": {
+        "address": "456 Tech Ave",
+        "city": "Tech City",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94052",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "organizer": {
+        "organizerName": "Innovative Tech Corp",
+        "organizerContact": "info@innovativetech.com"
+      },
+      "pricing": {
+        "ticketPrice": 100,
+        "discountCode": "TECH2024",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 360,
+        "attendeeList": [
+          "Alice Walker",
+          "Robert Brown",
+          "Linda Garcia"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/tie2024",
+        "twitterEventUrl": "https://twitter.com/tie2024",
+        "instagramEventUrl": "https://instagram.com/tie2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [
+            {
+              "productName": "Cancellation Fee",
+              "productCode": "CANC_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 15,
+              "priceName": "Basic Cancellation",
+              "priceCode": "PRICE_CANC_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Late Cancellation Fee",
+              "productCode": "LATECANC2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 30,
+              "priceName": "Last Minute Cancellation",
+              "priceCode": "PRICE_LATECANC_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "sessionId": "S003",
+          "sessionTitle": "Future of AI",
+          "sessionCode": "AIF2024",
+          "startDate": "2024-08-20",
+          "startTime": "11:00 AM",
+          "endDate": "2024-08-20",
+          "endTime": "12:30 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": true,
+          "fees": {
+            "registrationFee": {
+              "productName": "AI Session Registration",
+              "productCode": "AISESSIONREG2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-08-19",
+              "price": 50
+            }
+          },
+          "location": {
+            "locationName": "Innovation Center",
+            "room": "IC1",
+            "setup": "Theater"
+          },
+          "course": {
+            "courseId": "C007",
+            "courseName": "Artificial Intelligence Revolution"
+          },
+          "faculty": {
+            "speakers": [
+              "Elon Musk"
+            ],
+            "staff": [
+              "Sundar Pichai"
+            ],
+            "volunteers": [
+              "Mark Zuckerberg"
+            ]
+          }
+        },
+        {
+          "sessionId": "S004",
+          "sessionTitle": "Blockchain in Business",
+          "sessionCode": "BIB2024",
+          "startDate": "2024-08-21",
+          "startTime": "02:00 PM",
+          "endDate": "2024-08-21",
+          "endTime": "03:30 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": false,
+          "fees": {
+            "registrationFee": {
+              "productName": "Blockchain Session Registration",
+              "productCode": "BLOCKCHAINREG2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-08-19",
+              "price": 45
+            }
+          },
+          "location": {
+            "locationName": "Innovation Center",
+            "room": "IC2",
+            "setup": "Classroom"
+          },
+          "course": {
+            "courseId": "C008",
+            "courseName": "Blockchain Basics"
+          },
+          "faculty": {
+            "speakers": [
+              "Vitalik Buterin"
+            ],
+            "staff": [
+              "Brian Armstrong"
+            ],
+            "volunteers": [
+              "Changpeng Zhao"
+            ]
+          }
+        }
+      ],
+      "tracks": [],
+      "id": "4679"
+    },
+    {
+      "eventId": "64f8c7cbd7d6f51234a8b005",
+      "eventName": "Culinary Delights Expo",
+      "eventCode": "CDE2024",
+      "category": "Food & Drink",
+      "startDate": "2024-09-10",
+      "startTime": "11:00 AM",
+      "endDate": "2024-09-12",
+      "endTime": "05:00 PM",
+      "eventUrl": "https://example.com/cde2024",
+      "registration": {
+        "preRegistrationDate": "2024-06-01",
+        "earlyDate": "2024-07-31",
+        "standardDate": "2024-09-05",
+        "lateDate": "2024-09-09"
+      },
+      "registrationOptions": {
+        "isRegistrationRequired": true,
+        "isFreeEvent": false,
+        "autoRegisterFromWaitlist": false,
+        "isWaitlistAllowed": true,
+        "hasAbstract": true,
+        "isWaiverRequired": false
+      },
+      "miscellaneous": {
+        "fundraisingProduct": "Culinary Arts Fund",
+        "category": "Gastronomy"
+      },
+      "goals": {
+        "registrationGoal": 800,
+        "revenueGoal": 40000
+      },
+      "attendance": {
+        "projected": 600,
+        "guaranteed": 500,
+        "capacity": 800
+      },
+      "count": {
+        "registeredMain": 400,
+        "registeredGuests": 50,
+        "waitlistMain": 30,
+        "waitlistGuests": 20,
+        "available": 250,
+        "remaining": 100
+      },
+      "publishingAndCommunication": {
+        "postToWebDate": "2024-07-01",
+        "removeDate": "2024-09-13",
+        "timeZone": "GMT-05:00 Eastern Time",
+        "confirmationMessage": "Thank you for registering for the Culinary Delights Expo!"
+      },
+      "location": {
+        "address": "321 Culinary St",
+        "city": "Food City",
+        "state": "CA",
+        "country": "USA",
+        "postalCode": "94053",
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "organizer": {
+        "organizerName": "Gastronomy Events LLC",
+        "organizerContact": "info@gastronomyevents.com"
+      },
+      "pricing": {
+        "ticketPrice": 85,
+        "discountCode": "CULINARY2024",
+        "currency": "USD"
+      },
+      "attendees": {
+        "attendeeCount": 450,
+        "attendeeList": [
+          "Chef John",
+          "Sous Chef Anna",
+          "Baker Bob"
+        ]
+      },
+      "socialMedia": {
+        "facebookEventUrl": "https://facebook.com/cde2024",
+        "twitterEventUrl": "https://twitter.com/cde2024",
+        "instagramEventUrl": "https://instagram.com/cde2024"
+      },
+      "fees": [
+        {
+          "registration": [
+            {
+              "productName": "Standard Registration",
+              "productCode": "REGCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 85,
+              "priceName": "Regular Fee",
+              "priceCode": "PRICE_REG_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Early Bird Registration",
+              "productCode": "EARLYBIRD2024",
+              "startDate": "2024-05-01",
+              "endDate": "2024-05-31",
+              "price": 70,
+              "priceName": "Discounted Early Bird",
+              "priceCode": "PRICE_EARLY_2024",
+              "priceStartdate": "2024-05-01",
+              "priceEndDate": "2024-05-31"
+            }
+          ],
+          "cancellation": [
+            {
+              "productName": "Cancellation Fee",
+              "productCode": "CANC_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 15,
+              "priceName": "Basic Cancellation",
+              "priceCode": "PRICE_CANC_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Late Cancellation Fee",
+              "productCode": "LATECANC2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 30,
+              "priceName": "Last Minute Cancellation",
+              "priceCode": "PRICE_LATECANC_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ],
+          "sponsorship": [
+            {
+              "productName": "Silver Sponsorship",
+              "productCode": "SILVERCDE2024",
+              "startDate": "2024-02-01",
+              "endDate": "2024-09-01",
+              "price": 3000,
+              "priceName": "Silver Package",
+              "priceCode": "PRICE_SILVER_2024",
+              "priceStartdate": "2024-02-01",
+              "priceEndDate": "2024-09-01"
+            },
+            {
+              "productName": "Gold Sponsorship",
+              "productCode": "GOLDCDE2024",
+              "startDate": "2024-01-01",
+              "endDate": "2024-09-01",
+              "price": 5000,
+              "priceName": "Gold Package",
+              "priceCode": "PRICE_GOLD_2024",
+              "priceStartdate": "2024-01-01",
+              "priceEndDate": "2024-09-01"
+            }
+          ],
+          "transfer": [
+            {
+              "productName": "Transfer Fee",
+              "productCode": "TRANS_CDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 10,
+              "priceName": "Basic Transfer",
+              "priceCode": "PRICE_TRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Express Transfer Fee",
+              "productCode": "EXPTRANS2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 20,
+              "priceName": "Express Transfer",
+              "priceCode": "PRICE_EXPTRANS_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            }
+          ],
+          "substitution": [
+            {
+              "productName": "Substitution Fee",
+              "productCode": "SUBCDE2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 25,
+              "priceName": "Basic Substitution",
+              "priceCode": "PRICE_SUB_2024",
+              "priceStartdate": "2024-06-01",
+              "priceEndDate": "2024-09-09"
+            },
+            {
+              "productName": "Last Minute Substitution Fee",
+              "productCode": "LASTSUBCDE2024",
+              "startDate": "2024-09-01",
+              "endDate": "2024-09-08",
+              "price": 40,
+              "priceName": "Urgent Substitution",
+              "priceCode": "PRICE_URGENT_SUB_2024",
+              "priceStartdate": "2024-09-01",
+              "priceEndDate": "2024-09-08"
+            }
+          ]
+        }
+      ],
+      "sessions": [
+        {
+          "sessionId": "S005",
+          "sessionTitle": "Gourmet Cooking Techniques",
+          "sessionCode": "GCT2024",
+          "startDate": "2024-09-10",
+          "startTime": "01:00 PM",
+          "endDate": "2024-09-10",
+          "endTime": "02:30 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": true,
+          "fees": {
+            "registrationFee": {
+              "productName": "Cooking Session Registration",
+              "productCode": "COOKINGREG2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 40
+            }
+          },
+          "location": {
+            "locationName": "Culinary Institute",
+            "room": "CI1",
+            "setup": "Kitchen"
+          },
+          "course": {
+            "courseId": "C009",
+            "courseName": "Culinary Skills Masterclass"
+          },
+          "faculty": {
+            "speakers": [
+              "Chef Gordon Ramsay"
+            ],
+            "staff": [
+              "Chef Jamie Oliver"
+            ],
+            "volunteers": [
+              "Chef Nigella Lawson"
+            ]
+          }
+        },
+        {
+          "sessionId": "S006",
+          "sessionTitle": "Baking Mastery",
+          "sessionCode": "BM2024",
+          "startDate": "2024-09-11",
+          "startTime": "03:00 PM",
+          "endDate": "2024-09-11",
+          "endTime": "04:30 PM",
+          "preRegistration": true,
+          "earlyRegistration": true,
+          "standardRegistration": true,
+          "lateRegistration": false,
+          "fees": {
+            "registrationFee": {
+              "productName": "Baking Session Registration",
+              "productCode": "BAKINGREG2024",
+              "startDate": "2024-06-01",
+              "endDate": "2024-09-09",
+              "price": 35
+            }
+          },
+          "location": {
+            "locationName": "Culinary Institute",
+            "room": "CI2",
+            "setup": "Kitchen"
+          },
+          "course": {
+            "courseId": "C010",
+            "courseName": "Baking Techniques Course"
+          },
+          "faculty": {
+            "speakers": [
+              "Pastry Chef Pierre"
+            ],
+            "staff": [
+              "Chef Ina Garten"
+            ],
+            "volunteers": [
+              "Chef Rachel Ray"
+            ]
+          }
+        }
+      ],
+      "tracks": [],
+      "id": "b9e3"
+    },
+    {
+      "id": "963e",
+      "eventName": "Tech Conference 2025",
+      "eventCode": "TC2024",
+      "category": "Technology",
+      "startDate": "25/11/2025",
+      "startTime": "09:00 AM",
+      "endDate": "07/12/2025",
+      "endTime": "05:00 PM"
+    },
+    {
+      "id": "5d61",
+      "eventName": "Tech Conference 2025",
+      "eventCode": "TC2024",
+      "category": "Technology",
+      "startDate": "25/11/2025",
+      "startTime": "09:00 AM",
+      "endDate": "07/12/2025",
+      "endTime": "05:00 PM"
+    },
+    {
+      "id": "3894",
+      "eventName": "Tech Conference 2025",
+      "eventCode": "TC2024",
+      "category": "Technology",
+      "startDate": "25/11/2025",
+      "startTime": "09:00 AM",
+      "endDate": "07/12/2025",
+      "endTime": "05:00 PM"
+    }
+  ],
+  "accounts": {
+    "accountsReceivable": [
+      {
+        "accountName": "Standard Registration Fees Receivable",
+        "accountCode": "A/R_REGCDE2024",
+        "amount": 85,
+        "category": "registration"
+      },
+      {
+        "accountName": "Early Bird Registration Fees Receivable",
+        "accountCode": "A/R_EARLYBIRD2024",
+        "amount": 70,
+        "category": "registration"
+      },
+      {
+        "accountName": "Cancellation Fees Receivable",
+        "accountCode": "A/R_CANC_CDE2024",
+        "amount": 15,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Late Cancellation Fees Receivable",
+        "accountCode": "A/R_LATECANC2024",
+        "amount": 30,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Transfer Fees Receivable",
+        "accountCode": "A/R_TRANS_CDE2024",
+        "amount": 10,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Express Transfer Fees Receivable",
+        "accountCode": "A/R_EXPTRANS2024",
+        "amount": 20,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Substitution Fees Receivable",
+        "accountCode": "A/R_SUBCDE2024",
+        "amount": 25,
+        "category": "substitution"
+      },
+      {
+        "accountName": "Last Minute Substitution Fees Receivable",
+        "accountCode": "A/R_LASTSUBCDE2024",
+        "amount": 40,
+        "category": "substitution"
+      }
+    ],
+    "revenue": [
+      {
+        "accountName": "Standard Registration Revenue",
+        "accountCode": "REV_REGCDE2024",
+        "amount": 85,
+        "category": "registration"
+      },
+      {
+        "accountName": "Early Bird Registration Revenue",
+        "accountCode": "REV_EARLYBIRD2024",
+        "amount": 70,
+        "category": "registration"
+      },
+      {
+        "accountName": "Cancellation Revenue",
+        "accountCode": "REV_CANC_CDE2024",
+        "amount": 15,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Late Cancellation Revenue",
+        "accountCode": "REV_LATECANC2024",
+        "amount": 30,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Transfer Revenue",
+        "accountCode": "REV_TRANS_CDE2024",
+        "amount": 10,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Express Transfer Revenue",
+        "accountCode": "REV_EXPTRANS2024",
+        "amount": 20,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Substitution Revenue",
+        "accountCode": "REV_SUBCDE2024",
+        "amount": 25,
+        "category": "substitution"
+      },
+      {
+        "accountName": "Last Minute Substitution Revenue",
+        "accountCode": "REV_LASTSUBCDE2024",
+        "amount": 40,
+        "category": "substitution"
+      },
+      {
+        "accountName": "Silver Sponsorship Revenue",
+        "accountCode": "REV_SILVERCDE2024",
+        "amount": 3000,
+        "category": "sponsorship"
+      },
+      {
+        "accountName": "Gold Sponsorship Revenue",
+        "accountCode": "REV_GOLDCDE2024",
+        "amount": 5000,
+        "category": "sponsorship"
+      }
+    ],
+    "returns": [
+      {
+        "accountName": "Registration Returns",
+        "accountCode": "RET_REGISTRATION",
+        "amount": 0,
+        "category": "registration"
+      },
+      {
+        "accountName": "Cancellation Returns",
+        "accountCode": "RET_CANCELLATION",
+        "amount": 0,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Transfer Returns",
+        "accountCode": "RET_TRANSFER",
+        "amount": 0,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Substitution Returns",
+        "accountCode": "RET_SUBSTITUTION",
+        "amount": 0,
+        "category": "substitution"
+      }
+    ],
+    "writeOffs": [
+      {
+        "accountName": "Write-off for Registration Fees",
+        "accountCode": "WO_REGISTRATION",
+        "amount": 0,
+        "category": "registration"
+      },
+      {
+        "accountName": "Write-off for Cancellation Fees",
+        "accountCode": "WO_CANCELLATION",
+        "amount": 0,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Write-off for Transfer Fees",
+        "accountCode": "WO_TRANSFER",
+        "amount": 0,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Write-off for Substitution Fees",
+        "accountCode": "WO_SUBSTITUTION",
+        "amount": 0,
+        "category": "substitution"
+      }
+    ],
+    "liabilities": [
+      {
+        "accountName": "Liability for Registration Fees",
+        "accountCode": "LIAB_REGISTRATION",
+        "amount": 0,
+        "category": "registration"
+      },
+      {
+        "accountName": "Liability for Cancellation Fees",
+        "accountCode": "LIAB_CANCELLATION",
+        "amount": 0,
+        "category": "cancellation"
+      },
+      {
+        "accountName": "Liability for Transfer Fees",
+        "accountCode": "LIAB_TRANSFER",
+        "amount": 0,
+        "category": "transfer"
+      },
+      {
+        "accountName": "Liability for Substitution Fees",
+        "accountCode": "LIAB_SUBSTITUTION",
+        "amount": 0,
+        "category": "substitution"
+      }
+    ]
+  }
+}
