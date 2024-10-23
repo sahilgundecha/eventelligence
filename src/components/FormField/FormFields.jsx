@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import Input from '../Input/Input';
 import { ChevronDown, ChevronsDown, ChevronUp } from 'react-feather';
 import { useForm } from 'react-hook-form';
-import { FormContext } from '../../utils/formContext';
+import { FormContext } from '../../contexts/formContext';
 
 const FormFields = ({ data, keyField }) => {
   const [toggle, setToggle] = useState(false);

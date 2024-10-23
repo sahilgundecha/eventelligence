@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
-import FormContainer from '../../../components/FormContainer/FormContainer';
-import { FormContext } from '../../../utils/formContext';
-import FormFields from '../../../components/FormField/FormFields';
+import React, { useContext, useEffect, useState } from "react";
+import FormContainer from "../../../components/FormContainer/FormContainer";
+import { FormContext } from "../../../contexts/formContext";
+import FormFields from "../../../components/FormField/FormFields";
 import {
   ActionButtonNext,
   ActionButtonPrev,
-} from '../../../components/ActionButton/ActionButton';
-import FeesFormFields from '../../../components/FormField/FeesFormFields';
-import { ReactHookForm } from '../../../utils/ReactHookFormContext';
-import AddNew from '../../../components/AddNew/AddNew';
+} from "../../../components/ActionButton/ActionButton";
+import FeesFormFields from "../../../components/FormField/FeesFormFields";
+import { ReactHookForm } from "../../../contexts/ReactHookFormContext";
+import AddNew from "../../../components/AddNew/AddNew";
 
 const EventRegistrationFees = ({ steps }) => {
   const { currentEvent, currentStep, moveToNextStep } = useContext(FormContext);
@@ -36,18 +36,18 @@ const EventRegistrationFees = ({ steps }) => {
 
     console.log({ datainSubnit: data });
 
-    console.log('before');
+    console.log("before");
 
     moveToNextStep();
-    console.log('agfter');
+    console.log("agfter");
   };
 
   const feeTitles = {
-    registration: 'Event Registration Fees',
-    cancellation: 'Event Cancellation Fees',
-    sponsorship: 'Event Sponsorship Fees',
-    transfer: 'Event Transfer Fees',
-    substitution: 'Event Substitution Fees',
+    registration: "Event Registration Fees",
+    cancellation: "Event Cancellation Fees",
+    sponsorship: "Event Sponsorship Fees",
+    transfer: "Event Transfer Fees",
+    substitution: "Event Substitution Fees",
   };
 
   const { fees = [] } = currentEvent;
@@ -79,7 +79,7 @@ const EventRegistrationFees = ({ steps }) => {
           // Only render FormContainer if fee.data has items
           if (fee?.data?.length) {
             return (
-              <div className='mb-6'>
+              <div className="mb-6">
                 <FormContainer title={feeTitles[fee?.label]} key={fee?.label}>
                   {fee?.data?.map((singleFee, index) => (
                     <FeesFormFields
@@ -97,7 +97,7 @@ const EventRegistrationFees = ({ steps }) => {
           return null;
         })}
       {emptyFeeLabels?.map((label) => (
-        <div className='mb-6'>
+        <div className="mb-6">
           <FormContainer title={feeTitles[label]} />
           <AddNew />
         </div>
@@ -105,20 +105,20 @@ const EventRegistrationFees = ({ steps }) => {
 
       {/* this is button for next and prev */}
 
-      <div className='flex justify-end gap-4 mt-6 mb-2'>
+      <div className="flex justify-end gap-4 mt-6 mb-2">
         <ActionButtonPrev
           classNames={`${
             currentStep - 1 === 0
-              ? 'border border-gray-300 text-gray-500 cursor-not-allowed'
-              : 'border border-[#201502] text-[#201502] hover:bg-[#201502] hover:text-white transition duration-200'
+              ? "border border-gray-300 text-gray-500 cursor-not-allowed"
+              : "border border-[#201502] text-[#201502] hover:bg-[#201502] hover:text-white transition duration-200"
           } px-4 py-2`}
         />
         <ActionButtonNext
           OnClick={handleSubmit(handleFormSubmit)}
           classNames={`${
             currentStep?.index === steps.length
-              ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-              : 'bg-[#201502] text-white hover:bg-gray-700 transition duration-200'
+              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+              : "bg-[#201502] text-white hover:bg-gray-700 transition duration-200"
           }`}
         />
       </div>

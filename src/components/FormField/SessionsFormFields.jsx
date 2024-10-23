@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { FormContext } from '../../utils/formContext';
-import { ReactHookForm } from '../../utils/ReactHookFormContext';
+import { FormContext } from '../../contexts/formContext';
+import { ReactHookForm } from '../../contexts/ReactHookFormContext';
 import Input from '../Input/Input';
 import { ChevronDown, ChevronUp } from 'react-feather';
 import Select from '../Select/Select';
