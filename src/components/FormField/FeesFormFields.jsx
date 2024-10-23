@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import Input from '../Input/Input';
 import { ChevronDown, ChevronsDown, ChevronUp } from 'react-feather';
-import { FormContext } from '../../utils/formContext';
-import { ReactHookForm } from '../../utils/ReactHookFormContext';
+import { FormContext } from '../../contexts/formContext';
+import { ReactHookForm } from '../../contexts/ReactHookFormContext';
 import Select from '../Select/Select';
 
 const FeesFormFields = ({ data, keyField = '' }) => {

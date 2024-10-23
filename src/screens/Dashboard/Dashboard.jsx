@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useMemo, useState } from 'react';
-import { Eye, Copy, Search, Plus, Edit } from 'react-feather';
-import './Dashboard.css';
-import { useNavigate } from 'react-router-dom';
-import { FormContext } from '../../utils/formContext';
-import EventCard from '../../components/EventCard/EventCard';
-import FilterSortComponent from '../../components/Select/FilterSortComponent';
-import Sort from '../../components/Sort/Sort';
+import React, { useContext, useEffect, useMemo, useState } from "react";
+import { Eye, Copy, Search, Plus, Edit } from "react-feather";
+import "./Dashboard.css";
+import { useNavigate } from "react-router-dom";
+import { FormContext } from "../../contexts/formContext";
+import EventCard from "../../components/EventCard/EventCard";
+import FilterSortComponent from "../../components/Select/FilterSortComponent";
+import Sort from "../../components/Sort/Sort";
 
 const Dashboard = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [sortFilter, setSortFilter] = useState({
     sort: {},
     filter: {},
@@ -17,11 +17,11 @@ const Dashboard = () => {
   const { setEvents, setAccounts } = useContext(FormContext);
 
   async function myFun() {
-    const result = await fetch('http://localhost:3001/events');
+    const result = await fetch("http://localhost:3001/events");
     const data = await result.json();
     setEvents(data);
 
-    const accresult = await fetch('http://localhost:3001/accounts');
+    const accresult = await fetch("http://localhost:3001/accounts");
     const accdata = await accresult.json();
 
     setAccounts(accdata);
@@ -31,8 +31,8 @@ const Dashboard = () => {
     myFun();
   }, []);
 
-  const setSortAndFilter = (type = 'sort', value = {}) => {
-    if (type == 'filter') {
+  const setSortAndFilter = (type = "sort", value = {}) => {
+    if (type == "filter") {
       setSortFilter((prev) => ({ ...prev, filter: value }));
     }
   };
@@ -48,11 +48,11 @@ const Dashboard = () => {
     const eventEndDate = new Date(endDate);
 
     if (eventEndDate < now) {
-      return 'Past';
+      return "Past";
     } else if (eventStartDate <= now && eventEndDate >= now) {
-      return 'Ongoing';
+      return "Ongoing";
     } else {
-      return 'Upcoming';
+      return "Upcoming";
     }
   };
 
@@ -61,15 +61,15 @@ const Dashboard = () => {
       (acc, item) => {
         const status = getEventStatus(item.startDate, item.endDate);
 
-        if (status === 'Ongoing') {
+        if (status === "Ongoing") {
           return { ...acc, ongoing: acc.ongoing + 1 };
         }
 
-        if (status === 'Past') {
+        if (status === "Past") {
           return { ...acc, past: acc.past + 1 };
         }
 
-        if (status === 'Upcoming') {
+        if (status === "Upcoming") {
           return { ...acc, upcoming: acc.upcoming + 1 };
         }
 
@@ -104,50 +104,50 @@ const Dashboard = () => {
   }, [events, searchQuery, sortFilter]);
 
   return (
-    <div className='w-4/5 container mx-auto mt-16'>
-      <div className='container flex gap-8'>
+    <div className="w-4/5 container mx-auto mt-16">
+      <div className="container flex gap-8">
         <EventCard
           upcomingEventsCount={eventCount?.upcoming}
-          color={'#5ED500'}
-          title={'Upcoming Events'}
+          color={"#5ED500"}
+          title={"Upcoming Events"}
         />
         <EventCard
           upcomingEventsCount={eventCount?.ongoing}
-          color={'#FBBF02'}
-          title={'Ongoing Events'}
+          color={"#FBBF02"}
+          title={"Ongoing Events"}
         />
         <EventCard
           upcomingEventsCount={eventCount?.past}
-          color={'#E00000'}
-          title={'Past Events'}
+          color={"#E00000"}
+          title={"Past Events"}
         />
       </div>
 
-      <div className='my-8'>
-        <h1 className='text-xl font-semibold text mb-1'>
+      <div className="my-8">
+        <h1 className="text-xl font-semibold text mb-1">
           Event Search Result(s)
         </h1>
-        <p className='text-gray-600 text-base font-normal'>
+        <p className="text-gray-600 text-base font-normal">
           Get your results using the search field. Refine further by using the
           filters.
         </p>
       </div>
 
       {/* Search and Filter Section */}
-      <div className='flex justify-between items-center mb-4'>
-        <div className='flex items-center'>
-          <div className='relative px-2'>
+      <div className="flex justify-between items-center mb-4">
+        <div className="flex items-center">
+          <div className="relative px-2">
             <Search
-              className='absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm'
-              width={'18px'}
+              className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"
+              width={"18px"}
             />
             <input
               autoFocus
-              type='text'
+              type="text"
               value={searchQuery}
               onChange={handleSearchChange} // Update state on change
-              placeholder='Search by event title or code'
-              className='border-2 rounded pl-8 pr-4 py-2 w-80 mr-2 focus:outline-none focus:border-[#FF5B2E] transition-colors duration-300'
+              placeholder="Search by event title or code"
+              className="border-2 rounded pl-8 pr-4 py-2 w-80 mr-2 focus:outline-none focus:border-[#FF5B2E] transition-colors duration-300"
             />
           </div>
           {/* <span className='mr-2 text-[#201502] font-semibold text-sm'>
@@ -170,7 +170,7 @@ const Dashboard = () => {
             <span className='text-[#201502] text-sm font-bold'>Event Code</span>
           </label> */}
 
-          <div class='my-2 mx-2'>
+          <div class="my-2 mx-2">
             {/* <span className='mr-2 text-[#201502] font-semibold text-sm'>
               Sort by:
             </span> */}
@@ -185,37 +185,37 @@ const Dashboard = () => {
               <option value='past'>Past Events</option>
             </select> */}
           </div>
-          <div className='my-2'>
+          <div className="my-2">
             <Sort />
           </div>
         </div>
-        <div className='actions flex gap-3'>
+        <div className="actions flex gap-3">
           <button
-            className='outline outline-2 bg-[#201502] text-base font-semibold text-white px-4 py-2 rounded-md flex items-center gap-1 hover:bg-[#FF5B2E]'
-            onClick={() => navigate('/event/copy')}
+            className="outline outline-2 bg-[#201502] text-base font-semibold text-white px-4 py-2 rounded-md flex items-center gap-1 hover:bg-[#FF5B2E]"
+            onClick={() => navigate("/event/copy")}
           >
-            <Plus width={'18px'} />
+            <Plus width={"18px"} />
             Create New Event
           </button>
           <button
-            className='outline outline-2 outline-[#201502] text-base font-semibold text-[#201502] px-4 py-2 rounded-md flex items-center gap-1 hover:outline-[#FF5B2E] hover:text-[#FF5B2E]'
-            onClick={() => navigate('/event/copy')}
+            className="outline outline-2 outline-[#201502] text-base font-semibold text-[#201502] px-4 py-2 rounded-md flex items-center gap-1 hover:outline-[#FF5B2E] hover:text-[#FF5B2E]"
+            onClick={() => navigate("/event/copy")}
           >
-            <Copy width={'18px'} />
+            <Copy width={"18px"} />
             Copy Event
           </button>
         </div>
       </div>
       {/* Events Table */}
-      <table className='min-w-full bg-white border border-gray-200 border-x-0'>
-        <thead className='rounded-lg'>
-          <tr className='bg-gray-100 text-left '>
-            <th className='py-2 px-4 border-b'>Status</th>
-            <th className='py-2 px-4 border-b'>Event Title</th>
-            <th className='py-2 px-4 border-b'>Event Code</th>
-            <th className='py-2 px-4 border-b'>Start Date</th>
-            <th className='py-2 px-4 border-b'>End Date</th>
-            <th className='py-2 border-b pr-2'>Actions</th>
+      <table className="min-w-full bg-white border border-gray-200 border-x-0">
+        <thead className="rounded-lg">
+          <tr className="bg-gray-100 text-left ">
+            <th className="py-2 px-4 border-b">Status</th>
+            <th className="py-2 px-4 border-b">Event Title</th>
+            <th className="py-2 px-4 border-b">Event Code</th>
+            <th className="py-2 px-4 border-b">Start Date</th>
+            <th className="py-2 px-4 border-b">End Date</th>
+            <th className="py-2 border-b pr-2">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -244,44 +244,44 @@ const Dashboard = () => {
                 const status = getEventStatus(event.startDate, event.endDate);
                 return (
                   <tr key={index}>
-                    <td className='py-2 px-3 border-b'>
+                    <td className="py-2 px-3 border-b">
                       <span
                         className={`inline-flex items-center justify-center w-28 h-8 border rounded-full font-medium text-sm ${
-                          status === 'Upcoming'
-                            ? 'border-green-500 text-green-500'
-                            : status === 'Ongoing'
-                            ? 'border-yellow-500 text-yellow-500'
-                            : 'border-red-500 text-red-500'
+                          status === "Upcoming"
+                            ? "border-green-500 text-green-500"
+                            : status === "Ongoing"
+                            ? "border-yellow-500 text-yellow-500"
+                            : "border-red-500 text-red-500"
                         }`}
                       >
                         {status}
                       </span>
                     </td>
-                    <td className='py-2 px-4 border-b'>{event.eventName}</td>
-                    <td className='py-2 px-4 border-b'>{event.eventCode}</td>
-                    <td className='py-2 px-4 border-b'>{event.startDate}</td>
-                    <td className='py-2 px-4 border-b'>{event.endDate}</td>
-                    <td className='py-2 border-b'>
-                      <div className='flex space-x-4'>
-                        <div className='relative group'>
-                          <button className='flex items-center text-[#201502] hover:text-red-500 transition-colors duration-200'>
+                    <td className="py-2 px-4 border-b">{event.eventName}</td>
+                    <td className="py-2 px-4 border-b">{event.eventCode}</td>
+                    <td className="py-2 px-4 border-b">{event.startDate}</td>
+                    <td className="py-2 px-4 border-b">{event.endDate}</td>
+                    <td className="py-2 border-b">
+                      <div className="flex space-x-4">
+                        <div className="relative group">
+                          <button className="flex items-center text-[#201502] hover:text-red-500 transition-colors duration-200">
                             <Eye />
                           </button>
-                          <span className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 hidden group-hover:flex items-center bg-[#525150] text-white text-xs px-3 py-1 rounded w-max'>
+                          <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 hidden group-hover:flex items-center bg-[#525150] text-white text-xs px-3 py-1 rounded w-max">
                             View Event
                           </span>
                         </div>
-                        <div className='relative group'>
-                          <button className='flex items-center text-[#201502] hover:text-red-500 transition-colors duration-200'>
+                        <div className="relative group">
+                          <button className="flex items-center text-[#201502] hover:text-red-500 transition-colors duration-200">
                             <Edit />
                           </button>
-                          <span className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 hidden group-hover:flex items-center bg-[#525150] text-white text-xs px-3 py-1 rounded w-max'>
+                          <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 hidden group-hover:flex items-center bg-[#525150] text-white text-xs px-3 py-1 rounded w-max">
                             Edit Event
                           </span>
                         </div>
-                        <div className='relative group'>
+                        <div className="relative group">
                           <button
-                            className='flex items-center text-[#201502] hover:text-red-500 transition-colors duration-200'
+                            className="flex items-center text-[#201502] hover:text-red-500 transition-colors duration-200"
                             onClick={() => {
                               setCurrentEvent(event);
                               navigate(`/event/copy`);
@@ -289,7 +289,7 @@ const Dashboard = () => {
                           >
                             <Copy />
                           </button>
-                          <span className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 hidden group-hover:flex items-center bg-[#525150] text-white text-xs px-3 py-1 rounded w-max'>
+                          <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 hidden group-hover:flex items-center bg-[#525150] text-white text-xs px-3 py-1 rounded w-max">
                             Copy Event
                           </span>
                         </div>
@@ -300,7 +300,7 @@ const Dashboard = () => {
               })
           ) : (
             <tr>
-              <td colSpan={6} className='text-center py-4 text-gray-500'>
+              <td colSpan={6} className="text-center py-4 text-gray-500">
                 No events present
               </td>
             </tr>
