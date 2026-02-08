@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   // Fetch events using React Query
   const {
-    data: events = [],
+    data: { record: { events = [] } = {} } = {},
     isLoading: eventsLoading,
     error: eventsError,
     refetch: refetchEvents,
@@ -36,6 +36,8 @@ const Dashboard = () => {
     },
   });
 
+  console.log({ events });
+
   // Fetch accounts using React Query (for user context if needed)
   const {
     data: accounts = [],
@@ -44,9 +46,11 @@ const Dashboard = () => {
   } = useQuery({
     queryKey: ["accounts"],
     queryFn: async () => {
-      const response = await fetch(API_ENDPOINTS.ACCOUNTS);
-      if (!response.ok) throw new Error("Failed to fetch accounts");
-      return response.json();
+      // const response = await fetch(API_ENDPOINTS.ACCOUNTS);
+      // if (!response.ok) throw new Error("Failed to fetch accounts");
+      // return response.json();
+
+      return localStorage.getItem("user");
     },
   });
 
@@ -114,7 +118,7 @@ const Dashboard = () => {
           <EventTable
             events={processedEvents}
             isLoading={isLoading}
-            error={error}
+            // error={error}
             onDelete={() => refetchEvents()}
           />
         </div>

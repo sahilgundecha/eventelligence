@@ -23,7 +23,7 @@
   "scripts": {
     "db": "json-server --watch db.json --port 3001",
     "start": "vite",
-    "dev": "concurrently \"npm run db\" \"npm start\"",
+    "dev": "npm run start",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest"
