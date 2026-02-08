@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute.jsx";
 import PublicRoute from "./components/PublicRoute/PublicRoute.jsx";
 import NotFound from "./screens/NotFound/NotFound.jsx";
 import "./App.css";
+import IndexPage from "./screens/IndexPage/IndexPage.jsx";
 
 // Lazy load secondary page components for code splitting
 // Dashboard is eagerly loaded since it's the main entry point
@@ -48,6 +49,14 @@ function App() {
               </PublicRoute>
             }
           />
+          <Route
+            path="/"
+            element={
+              <PublicRoute>
+                <IndexPage />
+              </PublicRoute>
+            }
+          />
         </Route>
         <Route element={<MainLayout />}>
           <Route
@@ -57,6 +66,7 @@ function App() {
               </ProtectedRoute>
             }
             path="/dashboard"
+            index
           />
           <Route
             element={
