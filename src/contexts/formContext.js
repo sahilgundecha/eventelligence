@@ -1,65 +1,74 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from "react";
 
 export const FormContext = createContext();
 
 export const FormProvider = ({ children }) => {
   const [formData, setFormData] = useState(() => {
-    const savedFormData = localStorage.getItem('formData');
+    const savedFormData = localStorage.getItem("formData");
     return savedFormData ? JSON.parse(savedFormData) : {};
   });
 
   const [currentStepData, setCurrentStepData] = useState(() => {
-    const savedStepData = localStorage.getItem('currentStepData');
+    const savedStepData = localStorage.getItem("currentStepData");
     return savedStepData ? JSON.parse(savedStepData) : {};
   });
 
   const [currentStep, setCurrentStep] = useState(() => {
-    const storedStep = localStorage.getItem('currentStep');
+    const storedStep = localStorage.getItem("currentStep");
     return storedStep ? JSON.parse(storedStep) : { index: 1 };
   });
 
   const [events, setEvents] = useState(() => {
-    const savedEvents = localStorage.getItem('events');
+    const savedEvents = localStorage.getItem("events");
     return savedEvents ? JSON.parse(savedEvents) : [];
   });
   const [accounts, setAccounts] = useState(() => {
-    const savedAccounts = localStorage.getItem('accounts');
+    const savedAccounts = localStorage.getItem("accounts");
     return savedAccounts ? JSON.parse(savedAccounts) : [];
   });
   const [currentEvent, setCurrentEvent] = useState(() => {
-    const savedCurrentEvent = localStorage.getItem('currentEvent');
+    const savedCurrentEvent = localStorage.getItem("currentEvent");
     return savedCurrentEvent ? JSON.parse(savedCurrentEvent) : {};
   });
 
+  const [userRole, setUserRole] = useState(() => {
+    const savedRole = localStorage.getItem("userRole");
+    return savedRole ? JSON.parse(savedRole) : "user"; // Default to 'user', can be 'admin'
+  });
+
   useEffect(() => {
-    localStorage.setItem('formData', JSON.stringify(formData) ?? []);
+    localStorage.setItem("formData", JSON.stringify(formData) ?? []);
   }, [formData]);
 
   useEffect(() => {
     localStorage.setItem(
-      'currentStepData',
-      JSON.stringify(currentStepData) ?? {}
+      "currentStepData",
+      JSON.stringify(currentStepData) ?? {},
     );
   }, [currentStepData]);
 
   useEffect(() => {
-    localStorage.setItem('currentStep', JSON.stringify(currentStep));
+    localStorage.setItem("currentStep", JSON.stringify(currentStep));
   }, [currentStep, setCurrentStep]);
 
   useEffect(() => {
-    localStorage.setItem('events', JSON.stringify(events) ?? []);
+    localStorage.setItem("events", JSON.stringify(events) ?? []);
   }, [events]);
 
   useEffect(() => {
-    localStorage.setItem('accounts', JSON.stringify(accounts) ?? []);
+    localStorage.setItem("accounts", JSON.stringify(accounts) ?? []);
   }, [accounts]);
 
   useEffect(() => {
     localStorage.setItem(
-      'currentEvent',
-      JSON.stringify(currentEvent) ?? { index: 1 }
+      "currentEvent",
+      JSON.stringify(currentEvent) ?? { index: 1 },
     );
   }, [currentEvent, setCurrentEvent]);
+
+  useEffect(() => {
+    localStorage.setItem("userRole", JSON.stringify(userRole));
+  }, [userRole]);
 
   const moveToNextStep = () => {
     setFormData((prevFormData) => ({
@@ -68,7 +77,7 @@ export const FormProvider = ({ children }) => {
     }));
     const nextStep = { index: currentStep.index + 1 };
     setCurrentStep(nextStep);
-    localStorage.setItem('currentStep', JSON.stringify(nextStep));
+    localStorage.setItem("currentStep", JSON.stringify(nextStep));
     setCurrentStepData({});
   };
 
@@ -76,7 +85,7 @@ export const FormProvider = ({ children }) => {
     if (currentStep.index > 1) {
       const prevStep = { index: currentStep.index - 1 };
       setCurrentStep(prevStep);
-      localStorage.setItem('currentStep', JSON.stringify(prevStep)); // Update localStorage immediately
+      localStorage.setItem("currentStep", JSON.stringify(prevStep)); // Update localStorage immediately
     }
   };
   return (
@@ -96,6 +105,8 @@ export const FormProvider = ({ children }) => {
         setCurrentEvent,
         accounts,
         setAccounts,
+        userRole,
+        setUserRole,
       }}
     >
       {children}

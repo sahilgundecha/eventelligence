@@ -5,9 +5,9 @@
       "eventName": "Tech Innovation Summit",
       "eventCode": "TIS2024",
       "category": "Technology",
-      "startDate": "2024-10-01",
+      "startDate": "2026-10-01",
       "startTime": "08:00 AM",
-      "endDate": "2024-10-15",
+      "endDate": "2026-10-15",
       "endTime": "05:00 PM",
       "eventUrl": "https://example.com/tis2024",
       "registration": {
@@ -334,9 +334,9 @@
       "eventName": "Global Health Conference",
       "eventCode": "GHC2024",
       "category": "Health",
-      "startDate": "2024-11-10",
+      "startDate": "2026-11-10",
       "startTime": "09:00 AM",
-      "endDate": "2024-11-12",
+      "endDate": "2026-11-12",
       "endTime": "05:00 PM",
       "eventUrl": "https://example.com/ghc2024",
       "registration": {
@@ -588,9 +588,9 @@
       "eventName": "Tech Conference 2024",
       "eventCode": "TC2024",
       "category": "Technology",
-      "startDate": "05/10/2024",
+      "startDate": "05/10/2026",
       "startTime": "09:00 AM",
-      "endDate": "05/12/2024",
+      "endDate": "05/12/2026",
       "endTime": "05:00 PM",
       "eventUrl": "https://example.com/tc2024",
       "registration": {
@@ -2064,27 +2064,7 @@
       "id": "b9e3"
     },
     {
-      "id": "963e",
-      "eventName": "Tech Conference 2025",
-      "eventCode": "TC2024",
-      "category": "Technology",
-      "startDate": "25/11/2025",
-      "startTime": "09:00 AM",
-      "endDate": "07/12/2025",
-      "endTime": "05:00 PM"
-    },
-    {
-      "id": "5d61",
-      "eventName": "Tech Conference 2025",
-      "eventCode": "TC2024",
-      "category": "Technology",
-      "startDate": "25/11/2025",
-      "startTime": "09:00 AM",
-      "endDate": "07/12/2025",
-      "endTime": "05:00 PM"
-    },
-    {
-      "id": "3894",
+      "id": "2e88",
       "eventName": "Tech Conference 2025",
       "eventCode": "TC2024",
       "category": "Technology",

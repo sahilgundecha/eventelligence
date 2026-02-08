@@ -1,127 +1,187 @@
 import React, { useContext, useEffect, useState } from "react";
 import FormContainer from "../../../components/FormContainer/FormContainer";
-import { FormContext } from "../../../contexts/formContext";
+import { FormContext } from "../../../contexts/formContext.js";
 import FormFields from "../../../components/FormField/FormFields";
 import {
   ActionButtonNext,
   ActionButtonPrev,
 } from "../../../components/ActionButton/ActionButton";
 import FeesFormFields from "../../../components/FormField/FeesFormFields";
-import { ReactHookForm } from "../../../contexts/ReactHookFormContext";
+import { useFormContext, useFieldArray } from "react-hook-form";
 import AddNew from "../../../components/AddNew/AddNew";
 
 const EventRegistrationFees = ({ steps }) => {
   const { currentEvent, currentStep, moveToNextStep } = useContext(FormContext);
-  const { formMethods } = useContext(ReactHookForm);
-  const [emptyFeeLabels, setEmptyFeeLabels] = useState([]);
+  const formMethods = useFormContext();
+  const { control, handleSubmit } = formMethods;
 
-  const { handleSubmit, watch } = formMethods;
+  // Initialize fees by type from currentEvent
+  const [feesInitialized, setFeesInitialized] = useState(false);
+
+  const {
+    fields: registrationFees,
+    append: appendRegistrationFee,
+    remove: removeRegistrationFee,
+  } = useFieldArray({
+    control,
+    name: "fees.registration",
+  });
+
+  const {
+    fields: cancellationFees,
+    append: appendCancellationFee,
+    remove: removeCancellationFee,
+  } = useFieldArray({
+    control,
+    name: "fees.cancellation",
+  });
+
+  const {
+    fields: sponsorshipFees,
+    append: appendSponsorshipFee,
+    remove: removeSponsorshipFee,
+  } = useFieldArray({
+    control,
+    name: "fees.sponsorship",
+  });
+
+  const {
+    fields: transferFees,
+    append: appendTransferFee,
+    remove: removeTransferFee,
+  } = useFieldArray({
+    control,
+    name: "fees.transfer",
+  });
+
+  const {
+    fields: substitutionFees,
+    append: appendSubstitutionFee,
+    remove: removeSubstitutionFee,
+  } = useFieldArray({
+    control,
+    name: "fees.substitution",
+  });
+
+  // Fee type configuration
+  const feeTypes = {
+    registration: {
+      title: "Event Registration Fees",
+      fields: registrationFees,
+      append: appendRegistrationFee,
+      remove: removeRegistrationFee,
+    },
+    cancellation: {
+      title: "Event Cancellation Fees",
+      fields: cancellationFees,
+      append: appendCancellationFee,
+      remove: removeCancellationFee,
+    },
+    sponsorship: {
+      title: "Event Sponsorship Fees",
+      fields: sponsorshipFees,
+      append: appendSponsorshipFee,
+      remove: removeSponsorshipFee,
+    },
+    transfer: {
+      title: "Event Transfer Fees",
+      fields: transferFees,
+      append: appendTransferFee,
+      remove: removeTransferFee,
+    },
+    substitution: {
+      title: "Event Substitution Fees",
+      fields: substitutionFees,
+      append: appendSubstitutionFee,
+      remove: removeSubstitutionFee,
+    },
+  };
 
   useEffect(() => {
-    const subscription = watch((value) => {
-      //   setCurrentStepData((prev) =>
-      //     JSON.stringify(prev) !== JSON.stringify(value) ? value : prev
-      //   );
-
-      console.log({ watchValue: value });
-    });
-    return () => subscription.unsubscribe();
-  }, [watch]);
+    if (currentEvent?.fees && !feesInitialized) {
+      // Initialize fees by type
+      Object.entries(currentEvent.fees).forEach(([feeType, feesList]) => {
+        if (Array.isArray(feesList) && feesList.length > 0) {
+          feesList.forEach((fee) => {
+            feeTypes[feeType]?.append(fee);
+          });
+        }
+      });
+      setFeesInitialized(true);
+    }
+  }, [currentEvent?.fees, feesInitialized]);
 
   const handleFormSubmit = (data) => {
-    // setFormData((prev) => {
-    //   return { ...prev, step2: data };
-    // });
-    // setCurrentStepData({});
-
-    console.log({ datainSubnit: data });
-
-    console.log("before");
-
+    console.log("Fees data submitted:", data.fees);
     moveToNextStep();
-    console.log("agfter");
   };
 
-  const feeTitles = {
-    registration: "Event Registration Fees",
-    cancellation: "Event Cancellation Fees",
-    sponsorship: "Event Sponsorship Fees",
-    transfer: "Event Transfer Fees",
-    substitution: "Event Substitution Fees",
+  const renderFeeSection = (feeType, config) => {
+    const { fields, append, remove, title } = config;
+
+    return (
+      <div key={feeType} className="mb-8">
+        <FormContainer title={title}>
+          {fields && fields.length > 0 ? (
+            fields.map((field, index) => (
+              <div key={field.id} className="mb-4">
+                <FeesFormFields
+                  data={field}
+                  fieldIndex={index}
+                  feeType={feeType}
+                  onRemove={() => remove(index)}
+                />
+              </div>
+            ))
+          ) : (
+            <div className="container bg-[#FFFFFF] w-full rounded-lg p-3 mb-3 text-center text-gray-500">
+              No fees added yet. Click "Add New" to add a fee.
+            </div>
+          )}
+
+          <AddNew
+            label="Add New Fee"
+            onClick={() =>
+              append({
+                productName: "",
+                productCode: "",
+                startDate: "",
+                endDate: "",
+                amount: "",
+                description: "",
+              })
+            }
+          />
+        </FormContainer>
+      </div>
+    );
   };
-
-  const { fees = [] } = currentEvent;
-
-  console.log({ fees });
-
-  const data = fees?.map((fee) =>
-    Object.entries(fee)?.map(([label, value]) => ({ label, data: value }))
-  );
-
-  const feesData = data[0];
-
-  useEffect(() => {
-    // Clear state when feesData changes
-    setEmptyFeeLabels([]);
-
-    // Store labels with empty fee.data
-    feesData?.forEach((fee) => {
-      if (!fee?.data?.length) {
-        setEmptyFeeLabels((prev) => [...prev, fee?.label]);
-      }
-    });
-  }, []);
 
   return (
     <div>
-      {feesData &&
-        feesData.map((fee) => {
-          // Only render FormContainer if fee.data has items
-          if (fee?.data?.length) {
-            return (
-              <div className="mb-6">
-                <FormContainer title={feeTitles[fee?.label]} key={fee?.label}>
-                  {fee?.data?.map((singleFee, index) => (
-                    <FeesFormFields
-                      data={singleFee}
-                      keyField={`${fee?.label}${index}`}
-                      // formMethods={formMethods}
-                    />
-                  ))}
-                  <AddNew />
-                </FormContainer>
-              </div>
-            );
-          }
-          // Otherwise, do not render and store in state
-          return null;
-        })}
-      {emptyFeeLabels?.map((label) => (
-        <div className="mb-6">
-          <FormContainer title={feeTitles[label]} />
-          <AddNew />
+      <form onSubmit={handleSubmit(handleFormSubmit)}>
+        {Object.entries(feeTypes).map(([feeType, config]) =>
+          renderFeeSection(feeType, config),
+        )}
+
+        <div className="flex justify-end gap-4 mt-6 mb-2">
+          <ActionButtonPrev
+            classNames={`${
+              currentStep - 1 === 0
+                ? "border border-gray-300 text-gray-500 cursor-not-allowed"
+                : "border border-[#201502] text-[#201502] hover:bg-[#201502] hover:text-white transition duration-200"
+            } px-4 py-2`}
+          />
+          <ActionButtonNext
+            OnClick={handleSubmit(handleFormSubmit)}
+            classNames={`${
+              currentStep?.index === steps.length
+                ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                : "bg-[#201502] text-white hover:bg-gray-700 transition duration-200"
+            }`}
+          />
         </div>
-      ))}
-
-      {/* this is button for next and prev */}
-
-      <div className="flex justify-end gap-4 mt-6 mb-2">
-        <ActionButtonPrev
-          classNames={`${
-            currentStep - 1 === 0
-              ? "border border-gray-300 text-gray-500 cursor-not-allowed"
-              : "border border-[#201502] text-[#201502] hover:bg-[#201502] hover:text-white transition duration-200"
-          } px-4 py-2`}
-        />
-        <ActionButtonNext
-          OnClick={handleSubmit(handleFormSubmit)}
-          classNames={`${
-            currentStep?.index === steps.length
-              ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-              : "bg-[#201502] text-white hover:bg-gray-700 transition duration-200"
-          }`}
-        />
-      </div>
+      </form>
     </div>
   );
 };

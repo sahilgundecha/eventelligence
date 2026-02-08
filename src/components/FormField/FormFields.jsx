@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import Input from '../Input/Input';
-import { ChevronDown, ChevronsDown, ChevronUp } from 'react-feather';
-import { useForm } from 'react-hook-form';
-import { FormContext } from '../../contexts/formContext';
+import React, { useContext, useEffect, useRef, useState } from "react";
+import Input from "../Input/Input";
+import { ChevronDown, ChevronsDown, ChevronUp } from "react-feather";
+import { useForm } from "react-hook-form";
+import { FormContext } from "../../contexts/formContext.js";
 
 const FormFields = ({ data, keyField }) => {
   const [toggle, setToggle] = useState(false);
@@ -40,10 +40,10 @@ const FormFields = ({ data, keyField }) => {
 
   return (
     <div
-      className='container bg-[#FFFFFF] w-full rounded-lg p-3'
-      style={{ boxShadow: ' 0px 0px 12px 0px #00000029' }}
+      className="container bg-[#FFFFFF] w-full rounded-lg p-3"
+      style={{ boxShadow: " 0px 0px 12px 0px #00000029" }}
     >
-      <div className='form flex gap-3 flex-grow'>
+      <div className="form flex gap-3 flex-grow">
         {/* <Input
           type='text'
           id='productName'
@@ -112,21 +112,21 @@ const FormFields = ({ data, keyField }) => {
           }
         </div> */}
       </div>
-      <div className='line my-4 h-[0.5px] w-full bg-[#E9EBEF]'></div>
+      <div className="line my-4 h-[0.5px] w-full bg-[#E9EBEF]"></div>
       {data?.price && (
-        <div className='price'>
+        <div className="price">
           <div
-            className='price-div flex items-center gap-1 w-max my-2 cursor-pointer'
+            className="price-div flex items-center gap-1 w-max my-2 cursor-pointer"
             onClick={() => setToggle((prev) => !prev)}
           >
-            <p className='font-bold text-sm select-none'>Price</p>
+            <p className="font-bold text-sm select-none">Price</p>
             {!toggle ? (
-              <ChevronDown strokeWidth={1} width={'20px'} />
+              <ChevronDown strokeWidth={1} width={"20px"} />
             ) : (
-              <ChevronUp strokeWidth={1} width={'20px'} />
+              <ChevronUp strokeWidth={1} width={"20px"} />
             )}
           </div>
-          {toggle && <div className='price-content'></div>}
+          {toggle && <div className="price-content"></div>}
         </div>
       )}
     </div>
