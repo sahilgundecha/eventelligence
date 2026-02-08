@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Check } from "react-feather";
-import { FormContext } from "../../contexts/formContext";
+import { FormContext } from "../../contexts/formContext.js";
 
 const Stepper = ({ steps, currentStep: activeStep }) => {
   const { setCurrentStep } = useContext(FormContext);

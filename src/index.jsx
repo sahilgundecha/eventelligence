@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import reportWebVitals from "./reportWebVitals.js";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { AuthProvider } from "./contexts/AuthContext.js";
+// import { AuthProvider } from "./contexts/AuthContext.js";
 import { FormProvider } from "./contexts/formContext.js";
 import { HookFormProvider } from "./contexts/ReactHookFormContext.js";
 
@@ -25,13 +25,13 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <AuthProvider>
-          <HookFormProvider>
-            <FormProvider>
-              <App />
-            </FormProvider>
-          </HookFormProvider>
-        </AuthProvider>
+        {/* <AuthProvider> */}
+        <HookFormProvider>
+          <FormProvider>
+            <App />
+          </FormProvider>
+        </HookFormProvider>
+        {/* </AuthProvider> */}
       </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>,

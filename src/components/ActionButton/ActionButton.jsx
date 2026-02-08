@@ -1,13 +1,13 @@
-import React from 'react';
-import { FormContext, FormProvider } from '../../contexts/formContext';
+import React, { useContext } from "react";
+import { FormContext } from "../../contexts/formContext.js";
 
 export const ActionButtonNext = ({
   OnClick,
   disabled,
   classNames,
-  label = 'Next',
+  label = "Next",
 }) => {
-  const { currentStep } = FormProvider(FormContext);
+  const { currentStep } = useContext(FormContext);
   return (
     <button
       onClick={OnClick}
@@ -23,9 +23,9 @@ export const ActionButtonPrev = ({
   OnClick,
   disabled,
   classNames,
-  label = 'Prev',
+  label = "Prev",
 }) => {
-  const { currentStep } = FormProvider(FormContext);
+  const { currentStep } = useContext(FormContext);
   return (
     <button
       onClick={OnClick}

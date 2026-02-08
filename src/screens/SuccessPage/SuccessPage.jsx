@@ -23,7 +23,7 @@ const SuccessPage = () => {
 
     console.log({ response });
 
-    navigate('/dashboard');
+    navigate('/');
   };
 
   const navigate = useNavigate();
